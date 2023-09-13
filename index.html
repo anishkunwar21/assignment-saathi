@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/1964f917ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <div class="div-container container">
+                <input type="checkbox" name="hehe">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+        
+                <img src="./images/logo.png">
+    
+            <ul class="nav-items">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        </nav>
+        <div class="about-container container">
+            <div class="img-box">
+                <img src="./images/Untitled-1.png">
+            </div>
+            <div class="text-box" id="about">
+                <h1>Don't Wanna Do Your Assignments?</h1>
+                <p>Don't wanna do your assignments? Got other fun and exciting things to do? Wan't somebody else to do your assignments for you? If that's the case then don't worry. We, Assignment Saathi, are a team of proeficient individuals who will remove the hassle of doing assignments for you. Our experts will do your assignments without any error so you can enjoy your life by doing other things that are more fun and meaningful to you. So, what are you waiting for? Contact us and get your assignments done.</p>
+                <button><a href="#services">Services</a></button>
+                <button><a href="#contact">Contact Us</a></button>
+            </div>
+        </div>
+</header>
+<!-- ######### services section ################## -->
+<section class="services" id="services">
+    <h1>Our Services</h1>
+    <div class="service-container container">
+        <div class="service1-container">
+            <div class="service1-imgbox">
+                <img src="./images/serv-1.png">
+            </div>
+            <div class="service1-textbox">
+                <h1>1. 100% Error Free Assignments</h1>
+                <p>It's kind of impossible to do an assignment without any error right? But, we, Assignment Saathi, can turn that impossible into possible by doing your assignments without any error. We are a team of talented individuals who will work efficiently to make your assignments error free.</p>
+            </div>
+        </div>
+        <!-- #######service 2########## -->
+        <div class="service2-container">
+            <div class="service2-imgbox">
+                <img src="./images/serv-2.png">
+            </div>
+            <div class="service2-textbox">
+                <h1>2. Student Friendly Rates</h1>
+            <p>By looking at our capabilities and services it is no surprise for you to imagine paying high rates for our services. Looking at the fact that our services are student oriented, we charge significantly low rates for our services which makes it affordable and easy for students to use our service and make the most out of it.</p>
+        </div>
+        </div>
+        <!-- ###service 3############ -->
+        <div class="service3-container">
+            <div class="service3-imgbox">
+                <img src="./images/serv-3.png">
+            </div>
+            <div class="service3-textbox">
+                <h1>3. Delivery Of Assignments</h1>
+                 <p>We, Assignment Saathi, do tangible assignments as well E-Assignments. In case of physical or tangible assignments we will take the necessary papers from your location and deliver it to your location after the completion of your assignments. You just need to contact us, give us necessary papers, and then we will simply deliver it to you before the deadline date.</p>
+            </div>
+        </div>
+        <!-- ##### service 4 ######## -->
+        <div class="service4-container">
+            <div class="service4-imgbox">
+                <img src="./images/serv-4.png">
+            </div>
+            <div class="service4-textbox">
+                <<h1>4. Completion before deadline</h1>
+                <p>We will not only do your assignments efficiently but also quickly. Our team ensures that quality assignments are done with minimal time consumption. We aim to finish your assignments even before deadline so that you can get time to make or add any necessary changes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-us" id="contact">
+    <div class="contact-container container">
+        <div class="contact-textbox">
+            <h1>So, What Are You Waiting For?</h1>
+            <p>Contact us via our socials which are mentioned below if you don't want to do your assignments but want to get it done without any hassle. We, Assignment Saathi, are here just for you, to do your assignments so that you could enjoy your life a little more.</p>
+        </div>
+        <div class="contact-imgbox">
+            <img src="./images/soch.png">
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="icons">
+        <i class="fa fa-brands fa-whatsapp fa-4x" aria-hidden="true"></i>
+        <i class="fa fa-brands fa-instagram fa-4x" aria-hidden="true"></i>
+        <i class="fa fa-brands fa-facebook fa-4x" aria-hidden="true"></i>
+    </div>
+</footer>
+
+
+
+
+
+
+    <!-- ############ for smooth scroll ######################## -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>

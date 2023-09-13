@@ -1,0 +1,1106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/* ############ utility classes ################## */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+/* ############## navbar styling ################## */
+header{
+    height: 95vh;
+    background-position: center;
+    display: flex;
+}
+.hamburger-lines,
+input[type="checkbox"]{
+    display: none;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    opacity: 0.9;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px 0px 25px 0 #0000003b;
+    position: fixed;
+}
+.div-container {
+    display: flex;
+    justify-content: space-between;
+}
+.div-container img{
+    display: block;
+    height: 90px;
+    width: 240px;
+    object-fit: cover;
+    object-position: center;
+}
+.div-container ul{
+    display: flex;
+}
+.div-container ul li{
+    list-style: none;
+    padding: 1.6em;
+    margin: auto;
+}
+.div-container ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 600;
+}
+.div-container ul li a:hover{
+border-bottom: 2px solid grey;
+}
+/* ########### about styling ################## */
+.about-container{
+    display: flex;
+}
+.img-box{
+    width: 50%;
+    animation: move1 0.3s ease-in forwards;
+    transform: translateX(-150%);
+    order: 1;
+}
+.img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.text-box{
+    width: 50%;
+    text-align: center;
+    padding: 3em;
+    margin: auto;
+    animation: move2 0.3s ease-in forwards;
+    transform: translateX(150%);
+    order:3;
+}
+.text-box button{
+    font-size: 1.6rem;
+    padding: 0.4em 0.9em;
+    border-radius: 25px;
+    margin: 0.6em;
+    background-image: linear-gradient( 68.3deg,  rgba(245,177,97,1) 0.4%, rgba(236,54,110,1) 100.2% );
+    color:white;
+    border:0;
+    outline: 0;
+}
+.text-box button a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.3em;
+}
+.text-box button a:hover{
+    color: rgb(230, 230, 230);
+}
+.text-box h1{
+    font-size: 3.2rem;
+    margin-bottom: 0.6em;
+}
+.text-box p{
+    font-size: 1.6rem;
+    letter-spacing: 0.4px;
+    margin: 0.4em;
+}
+/* ############## services section ################# */
+section.services{
+    background-color: #d8d8d8;
+    padding: 3rem;
+    margin-bottom: 5rem;
+}
+section.services h1{
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0.9em;
+}
+.service-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
+.service1-container{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px 0px #00000020;
+    margin-bottom: 5em;
+}
+.service1-textbox,.service1-imgbox{
+    width: 50%;
+}
+.service1-imgbox{
+    background-color: #f5f4f4;
+}
+.service1-imgbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.service1-textbox{
+    width: 50%;
+    text-align: center;
+    padding: 3em;
+    margin: auto;
+}
+.service1-textbox h1{
+    font-size:3.2rem;
+}
+.service1-textbox p{
+    font-size:1.6rem;
+    letter-spacing: 0.4px;
+    margin: 0.4em;
+}
+/* #######service 2 ############ */
+.service2-container{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px 0px #00000020;
+    margin-bottom: 5em;
+}
+.service2-textbox,.service2-imgbox{
+    width: 50%;
+}
+.service2-imgbox{
+    background-color: #f5f4f4;
+}
+.service2-imgbox{
+    order: 16;
+}
+.service2-imgbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.service2-textbox{
+    width: 50%;
+    order: 10;
+    text-align: center;
+    padding: 3em;
+    margin: auto;
+}
+.service2-textbox h1{
+    font-size:3.2rem;
+}
+.service2-textbox p{
+    font-size:1.6rem;
+    letter-spacing: 0.4px;
+    margin: 0.4em;
+}
+/* #########service 3 ################ */
+.service3-container{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px 0px #00000020;
+    margin-bottom: 5em;
+}
+.service3-textbox,.service3-imgbox{
+    width: 50%;
+}
+.service3-imgbox{
+    background-color: #f5f4f4;
+}
+.service3-imgbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.service3-textbox{
+    width: 50%;
+    text-align: center;
+    padding: 3em;
+    margin: auto;
+}
+.service3-textbox h1{
+    font-size:3.2rem;
+}
+.service3-textbox p{
+    font-size:1.6rem;
+    letter-spacing: 0.4px;
+    margin: 0.4em;
+}
+/* ########## service 4######### */
+.service4-container{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px 0px #00000020;
+    
+}
+.service4-textbox,.service4-imgbox{
+    width: 50%;
+}
+.service4-imgbox{
+    background-color: #f5f4f4;
+}
+.service4-imgbox{
+    order: 16;
+}
+.service4-imgbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.service4-textbox{
+    width: 50%;
+    order: 10;
+    text-align: center;
+    padding: 2em;
+    margin: auto;
+}
+.service4-textbox h1{
+    font-size:3.2rem;
+}
+.service4-textbox p{
+    font-size:1.6rem;
+    letter-spacing: 0.4px;
+    margin: 0.4em;
+}
+/* ########## contact us styling ################# */
+section.contact-us{
+    padding: 3rem;
+    margin-bottom: 5rem;
+}
+.contact-container{
+display: flex;
+background-color: #f5f5f5;
+}
+.contact-textbox{
+    width: 50%;
+    order: 1;
+    margin: auto;
+    padding: 3em;
+    text-align: center;
+}
+.contact-textbox h1{
+    font-size: 3.2rem;
+    margin-bottom: 0.6em;
+}
+.contact-textbox p{
+    font-size: 1.6rem;
+    letter-spacing: 0.4px;
+    margin: 0.4em;
+}
+.contact-imgbox{
+    width: 50%;
+    background-color: #f1f0f0;
+    order: 2;
+}
+.contact-imgbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.icons{
+    background-color: rgb(241,72,69);
+    padding: 2.5em;
+    color: white;
+    text-align: center;
+}
+.icons i{
+   margin: 0.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes move1{
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes move2{
+    100%{
+        transform: translateX(0);
+    }
+}
+/* ############ media queries ############ */
+@media(min-width:1101px) and (max-width:1221px){
+    html{
+        font-size: 55%;
+    }  
+
+}
+@media(min-width:910px) and (max-width:1222px){
+    html{
+        font-size: 55%;
+    } 
+}
+@media (min-width:769px) and (max-width:808px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        height: 112vh;
+        background-position: center;
+        display: flex;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .text-box{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .img-box{
+        width: 100%;
+        height: 50%;
+    }
+    .service1-container{
+        flex-direction: column;
+        flex-wrap: w;
+    }
+    .service1-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+    }
+    .service1-imgbox{
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+    }
+    /* ########Service 2########### */
+    .service2-container{
+        flex-direction: column;
+    }
+    .service2-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+        order: 3;
+    }
+    .service2-imgbox{
+        width: 100%;
+        height: 50%;
+        order:1;
+        background-color: #fff;
+    }
+    /* ##### service 3######### */
+    .service3-container{
+        flex-direction: column;
+        flex-wrap: w;
+    }
+    .service3-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+    }
+    .service3-imgbox{
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+    }
+    /* #########service 4 ########## */
+    .service4-container{
+        flex-direction: column;
+    }
+    .service4-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+        order: 3;
+    }
+    .service4-imgbox{
+        width: 100%;
+        height: 50%;
+        order:1;
+        background-color: #fff;
+    }
+    .contact-container{
+        flex-direction: column;
+        box-shadow: 0px 0px 25px 0px #00000020;
+        background-color: white;
+    }
+    .contact-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-bottom: 4em;
+        background-color: white;
+    }
+    .contact-imgbox{
+        width: 100%;
+        height: 50%;
+        background-color: white;
+    }
+    
+
+}
+@media (min-width:809px) and (max-width:909px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        height: 116vh;
+        background-position: center;
+        display: flex;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .text-box{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .img-box{
+        width: 100%;
+        height: 50%;
+    }
+}
+@media (min-width:601px) and (max-width:768px){
+    .hamburger-lines,
+     input[type="checkbox"]{
+    display: block;
+}
+html{
+    font-size: 55%;
+}
+header{
+    height: 112vh;
+    background-position: center;
+    display: flex;
+}
+.about-container{
+    flex-direction: column;
+}
+.text-box{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+.img-box{
+    width: 100%;
+    height: 50%;
+}
+.div-container{
+    position: relative;
+    height: 80px;
+    display: block;
+}
+input[type="checkbox"]{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    height: 32px;
+    width: 40px;
+    z-index:5;
+    opacity: 0;
+}
+.hamburger-lines{
+    display: block;
+    position: absolute;
+    top:20px;
+    left: 20px;
+    height: 32px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+}
+.hamburger-lines .line{
+    background:#222;
+    border-radius: 10px;
+    width: 100%;
+    height: 4px;
+    display: block;
+    z-index:3;
+}
+.hamburger-lines .line1{
+    transform-origin: 0% 0%;
+    transition: all 0.5s ease-in-out;
+}
+.hamburger-lines .line2{
+    transition: all 0.5s ease-in-out;
+}
+.hamburger-lines .line3{
+    transform-origin: 0% 100%;
+    transition: all 0.5s ease-in-out;
+}
+.div-container ul{
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translateX(-150%);
+    display: flex;
+    flex-direction: column;
+    /* margin-left: -40px; */
+    padding: 30px;
+    position: relative;
+    left: -90px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    opacity: 13;
+}
+.div-container ul li{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+.div-container img{
+    position: absolute;
+    right: 15px;
+    height: 62px;
+    width: 145px;
+    top:8px;
+}
+input[type="checkbox"]:checked ~ .nav-items{
+    transform: translateX(0);
+}
+input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+    transform: rotate(45deg);
+}
+input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+    display: none;
+}
+input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+    transform: rotate(-45deg);}
+    .about-container{
+        flex-direction: column;
+    }
+    .text-box{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+    }
+    .img-box{
+        width: 100%;
+        height: 50%;
+    }
+    .service1-container{
+        flex-direction: column;
+        flex-wrap: w;
+    }
+    .service1-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+    }
+    .service1-imgbox{
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+    }
+    /* ########Service 2########### */
+    .service2-container{
+        flex-direction: column;
+    }
+    .service2-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+        order: 3;
+    }
+    .service2-imgbox{
+        width: 100%;
+        height: 50%;
+        order:1;
+        background-color: #fff;
+    }
+    /* ##### service 3######### */
+    .service3-container{
+        flex-direction: column;
+        flex-wrap: w;
+    }
+    .service3-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+    }
+    .service3-imgbox{
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+    }
+    /* #########service 4 ########## */
+    .service4-container{
+        flex-direction: column;
+    }
+    .service4-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+        order: 3;
+    }
+    .service4-imgbox{
+        width: 100%;
+        height: 50%;
+        order:1;
+        background-color: #fff;
+    }
+    .contact-container{
+        flex-direction: column;
+        box-shadow: 0px 0px 25px 0px #00000020;
+        background-color: white;
+    }
+    .contact-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-bottom: 4em;
+        background-color: white;
+    }
+    .contact-imgbox{
+        width: 100%;
+        height: 50%;
+        background-color: white;
+    }
+}
+@media(min-width:400px) and (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+    .hamburger-lines,
+     input[type="checkbox"]{
+    display: block;
+}
+header{
+    height: 105vh;
+    background-position: center;
+    display: flex;
+}
+.div-container{
+    position: relative;
+    height: 80px;
+    display: block;
+}
+input[type="checkbox"]{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    height: 32px;
+    width: 40px;
+    z-index:5;
+    opacity: 0;
+}
+
+.hamburger-lines{
+    display: block;
+    position: absolute;
+    top:20px;
+    left: 20px;
+    height: 32px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+}
+.hamburger-lines .line{
+    background:#222;
+    border-radius: 10px;
+    width: 100%;
+    height: 4px;
+    display: block;
+    z-index:3;
+}
+.hamburger-lines .line1{
+    transform-origin: 0% 0%;
+    transition: all 0.5s ease-in-out;
+}
+.hamburger-lines .line2{
+    transition: all 0.5s ease-in-out;
+}
+.hamburger-lines .line3{
+    transform-origin: 0% 100%;
+    transition: all 0.5s ease-in-out;
+}
+.div-container ul{
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translateX(-150%);
+    display: flex;
+    flex-direction: column;
+    /* margin-left: -40px; */
+    padding: 30px;
+    position: relative;
+    left: -90px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    opacity: 13;
+}
+.div-container ul li{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+.div-container img{
+    position: absolute;
+    right: 15px;
+    top:-7px;
+}
+input[type="checkbox"]:checked ~ .nav-items{
+    transform: translateX(0);
+}
+input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+    transform: rotate(45deg);
+}
+input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+    display: none;
+}
+input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+    transform: rotate(-45deg);}
+    .about-container{
+        flex-direction: column;
+    }
+    .text-box{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+    }
+    .img-box{
+        width: 100%;
+        height: 50%;
+    }
+    .service1-container{
+        flex-direction: column;
+        flex-wrap: w;
+    }
+    .service1-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+    }
+    .service1-imgbox{
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+    }
+    /* ########Service 2########### */
+    .service2-container{
+        flex-direction: column;
+    }
+    .service2-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+        order: 3;
+    }
+    .service2-imgbox{
+        width: 100%;
+        height: 50%;
+        order:1;
+        background-color: #fff;
+    }
+    /* ##### service 3######### */
+    .service3-container{
+        flex-direction: column;
+        flex-wrap: w;
+    }
+    .service3-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+    }
+    .service3-imgbox{
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+    }
+    /* #########service 4 ########## */
+    .service4-container{
+        flex-direction: column;
+    }
+    .service4-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+        order: 3;
+    }
+    .service4-imgbox{
+        width: 100%;
+        height: 50%;
+        order:1;
+        background-color: #fff;
+    }
+    .contact-container{
+        flex-direction: column;
+        box-shadow: 0px 0px 25px 0px #00000020;
+        background-color: white;
+    }
+    .contact-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-bottom: 4em;
+        background-color: white;
+    }
+    .contact-imgbox{
+        width: 100%;
+        height: 50%;
+        background-color: white;
+    }
+    .div-container img{
+        position: absolute;
+        right: 15px;
+        height: 62px;
+        width: 145px;
+        top:8px;
+    }
+}
+@media(min-width:200px) and (max-width:399px){
+    html{
+        font-size: 45%;
+    }
+    .hamburger-lines,
+     input[type="checkbox"]{
+    display: block;
+}
+header{
+    height: 105vh;
+    background-position: center;
+    display: flex;
+}
+.div-container{
+    position: relative;
+    height: 80px;
+    display: block;
+}
+input[type="checkbox"]{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    height: 32px;
+    width: 40px;
+    z-index:5;
+    opacity: 0;
+}
+
+.hamburger-lines{
+    display: block;
+    position: absolute;
+    top:20px;
+    left: 20px;
+    height: 32px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+}
+.hamburger-lines .line{
+    background:#222;
+    border-radius: 10px;
+    width: 100%;
+    height: 4px;
+    display: block;
+    z-index:3;
+}
+.hamburger-lines .line1{
+    transform-origin: 0% 0%;
+    transition: all 0.5s ease-in-out;
+}
+.hamburger-lines .line2{
+    transition: all 0.5s ease-in-out;
+}
+.hamburger-lines .line3{
+    transform-origin: 0% 100%;
+    transition: all 0.5s ease-in-out;
+}
+.div-container ul{
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translateX(-150%);
+    display: flex;
+    flex-direction: column;
+    /* margin-left: -40px; */
+    padding: 30px;
+    position: relative;
+    left: -90px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    opacity: 13;
+}
+.div-container ul li{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+.div-container img{
+    position: absolute;
+    right: 15px;
+    top:-7px;
+}
+input[type="checkbox"]:checked ~ .nav-items{
+    transform: translateX(0);
+}
+input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+    transform: rotate(45deg);
+}
+input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+    display: none;
+}
+input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+    transform: rotate(-45deg);}
+    .about-container{
+        flex-direction: column;
+    }
+    .text-box{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+    }
+    .img-box{
+        width: 100%;
+        height: 50%;
+    }
+    .service1-container{
+        flex-direction: column;
+        flex-wrap: w;
+    }
+    .service1-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+    }
+    .service1-imgbox{
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+    }
+    /* ########Service 2########### */
+    .service2-container{
+        flex-direction: column;
+    }
+    .service2-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+        order: 3;
+    }
+    .service2-imgbox{
+        width: 100%;
+        height: 50%;
+        order:1;
+        background-color: #fff;
+    }
+    /* ##### service 3######### */
+    .service3-container{
+        flex-direction: column;
+        flex-wrap: w;
+    }
+    .service3-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+    }
+    .service3-imgbox{
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+    }
+    /* #########service 4 ########## */
+    .service4-container{
+        flex-direction: column;
+    }
+    .service4-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-top: 2em;
+        order: 3;
+    }
+    .service4-imgbox{
+        width: 100%;
+        height: 50%;
+        order:1;
+        background-color: #fff;
+    }
+    .contact-container{
+        flex-direction: column;
+        box-shadow: 0px 0px 25px 0px #00000020;
+        background-color: white;
+    }
+    .contact-textbox{
+        width: 100%;
+        height: 50%;
+        padding: 4em;
+        margin-bottom: 4em;
+        background-color: white;
+    }
+    .contact-imgbox{
+        width: 100%;
+        height: 50%;
+        background-color: white;
+    }
+    .div-container img{
+        position: absolute;
+        right: 15px;
+        height: 62px;
+        width: 145px;
+        top:8px;
+    }
+}
+@media(orientation:landscape) and (max-height:500px){
+    html{
+        font-size: 50%;
+    }
+    header{
+        height: 107vmax;
+    }
+}
